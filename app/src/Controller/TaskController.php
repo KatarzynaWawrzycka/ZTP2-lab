@@ -7,7 +7,9 @@
 namespace App\Controller;
 
 use App\Entity\Task;
+use App\Entity\User;
 use App\Form\Type\TaskType;
+use App\Security\Voter\TaskVoter;
 use App\Service\TaskServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
@@ -15,6 +17,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapQueryParameter;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
@@ -64,6 +67,7 @@ class TaskController extends AbstractController
         requirements: ['id' => '[1-9]\d*'],
         methods: ['GET']
     )]
+    #[IsGranted(TaskVoter::VIEW, subject: 'task')]
     public function view(Task $task): Response
     {
         return $this->render(
@@ -82,11 +86,14 @@ class TaskController extends AbstractController
     #[Route(
         '/create',
         name: 'task_create',
-        methods: ['GET', 'POST'],
+        methods: ['GET', 'POST']
     )]
     public function create(Request $request): Response
     {
+        /** @var User $user */
+        $user = $this->getUser();
         $task = new Task();
+        $task->setAuthor($user);
         $form = $this->createForm(TaskType::class, $task);
         $form->handleRequest($request);
 
@@ -121,6 +128,7 @@ class TaskController extends AbstractController
         requirements: ['id' => '[1-9]\d*'],
         methods: ['GET', 'PUT']
     )]
+    #[IsGranted(TaskVoter::EDIT, subject: 'task')]
     public function edit(Request $request, Task $task): Response
     {
         $form = $this->createForm(
@@ -167,6 +175,7 @@ class TaskController extends AbstractController
         requirements: ['id' => '[1-9]\d*'],
         methods: ['GET', 'DELETE']
     )]
+    #[IsGranted(TaskVoter::DELETE, subject: 'task')]
     public function delete(Request $request, Task $task): Response
     {
         $form = $this->createForm(FormType::class, $task, [

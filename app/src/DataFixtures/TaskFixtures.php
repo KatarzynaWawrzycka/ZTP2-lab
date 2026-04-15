@@ -8,6 +8,7 @@ namespace App\DataFixtures;
 
 use App\Entity\Category;
 use App\Entity\Task;
+use App\Entity\User;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 use Faker\Generator;
@@ -48,6 +49,10 @@ class TaskFixtures extends AbstractBaseFixtures implements DependentFixtureInter
             $category = $this->getRandomReference('category', Category::class);
             $task->setCategory($category);
 
+            /** @var User $author */
+            $author = $this->getRandomReference('user', User::class);
+            $task->setAuthor($author);
+
             return $task;
         });
     }
@@ -62,6 +67,6 @@ class TaskFixtures extends AbstractBaseFixtures implements DependentFixtureInter
      */
     public function getDependencies(): array
     {
-        return [CategoryFixtures::class];
+        return [CategoryFixtures::class, UserFixtures::class];
     }
 }
