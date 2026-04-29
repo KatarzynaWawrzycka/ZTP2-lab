@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/wwwroot/app/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=13.0.1" rel="stylesheet" type="text/css">
+  <link href="_css/billboard.min.css?v=13.0.1" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=13.0.1" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/home/wwwroot/app/src</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classesCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/CategoryController.php.html#23">App\Controller\CategoryController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/HelloController.php.html#16">App\Controller\HelloController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RecordController.php.html#17">App\Controller\RecordController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SecurityController.php.html#18">App\Controller\SecurityController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TaskController.php.html#26">App\Controller\TaskController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/AbstractBaseFixtures.php.html#19">App\DataFixtures\AbstractBaseFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/CategoryFixtures.php.html#18">App\DataFixtures\CategoryFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/TaskFixtures.php.html#21">App\DataFixtures\TaskFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/UserFixtures.php.html#20">App\DataFixtures\UserFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#21">App\Entity\Category</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enum/UserRole.php.html#11">App\Entity\Enum\UserRole</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#16">App\Entity\Task</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#19">App\Entity\User</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/CategoryType.php.html#17">App\Form\Type\CategoryType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/TaskType.php.html#20">App\Form\Type\TaskType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CategoryRepository.php.html#19">App\Repository\CategoryRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RecordRepository.php.html#12">App\Repository\RecordRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TaskRepository.php.html#20">App\Repository\TaskRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/UserRepository.php.html#15">App\Repository\UserRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/Voter/TaskVoter.php.html#18">App\Security\Voter\TaskVoter</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/CategoryService.php.html#20">App\Service\CategoryService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/TaskService.php.html#17">App\Service\TaskService</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+         <th class="text-right">Complexity</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/CategoryController.php.html#23">App\Controller\CategoryController</a></td><td class="text-right">0.0%</td><td class="text-right">13</td><td class="text-right">182</td></tr>
+       <tr><td><a href="Controller/TaskController.php.html#26">App\Controller\TaskController</a></td><td class="text-right">0.0%</td><td class="text-right">12</td><td class="text-right">156</td></tr>
+       <tr><td><a href="Security/Voter/TaskVoter.php.html#18">App\Security\Voter\TaskVoter</a></td><td class="text-right">0.0%</td><td class="text-right">12</td><td class="text-right">156</td></tr>
+       <tr><td><a href="DataFixtures/AbstractBaseFixtures.php.html#19">App\DataFixtures\AbstractBaseFixtures</a></td><td class="text-right">0.0%</td><td class="text-right">11</td><td class="text-right">132</td></tr>
+       <tr><td><a href="Service/CategoryService.php.html#20">App\Service\CategoryService</a></td><td class="text-right">0.0%</td><td class="text-right">7</td><td class="text-right">56</td></tr>
+       <tr><td><a href="DataFixtures/TaskFixtures.php.html#21">App\DataFixtures\TaskFixtures</a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DataFixtures/UserFixtures.php.html#20">App\DataFixtures\UserFixtures</a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="Repository/RecordRepository.php.html#12">App\Repository\RecordRepository</a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controller/RecordController.php.html#17">App\Controller\RecordController</a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/SecurityController.php.html#18">App\Controller\SecurityController</a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DataFixtures/CategoryFixtures.php.html#18">App\DataFixtures\CategoryFixtures</a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Entity/Enum/UserRole.php.html#11">App\Entity\Enum\UserRole</a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repository/UserRepository.php.html#15">App\Repository\UserRepository</a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2 style="margin-top: 3rem;">Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodsCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/CategoryController.php.html#32"><abbr title="App\Controller\CategoryController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#43"><abbr title="App\Controller\CategoryController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#61"><abbr title="App\Controller\CategoryController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#82"><abbr title="App\Controller\CategoryController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#118"><abbr title="App\Controller\CategoryController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#164"><abbr title="App\Controller\CategoryController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/HelloController.php.html#26"><abbr title="App\Controller\HelloController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RecordController.php.html#27"><abbr title="App\Controller\RecordController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RecordController.php.html#49"><abbr title="App\Controller\RecordController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SecurityController.php.html#27"><abbr title="App\Controller\SecurityController::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SecurityController.php.html#49"><abbr title="App\Controller\SecurityController::logout">logout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TaskController.php.html#35"><abbr title="App\Controller\TaskController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TaskController.php.html#46"><abbr title="App\Controller\TaskController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TaskController.php.html#64"><abbr title="App\Controller\TaskController::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TaskController.php.html#86"><abbr title="App\Controller\TaskController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TaskController.php.html#125"><abbr title="App\Controller\TaskController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TaskController.php.html#172"><abbr title="App\Controller\TaskController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/AbstractBaseFixtures.php.html#36"><abbr title="App\DataFixtures\AbstractBaseFixtures::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/AbstractBaseFixtures.php.html#46"><abbr title="App\DataFixtures\AbstractBaseFixtures::loadData">loadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/AbstractBaseFixtures.php.html#64"><abbr title="App\DataFixtures\AbstractBaseFixtures::createMany">createMany</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/AbstractBaseFixtures.php.html#91"><abbr title="App\DataFixtures\AbstractBaseFixtures::getRandomReference">getRandomReference</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/AbstractBaseFixtures.php.html#108"><abbr title="App\DataFixtures\AbstractBaseFixtures::getRandomReferenceList">getRandomReferenceList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/AbstractBaseFixtures.php.html#128"><abbr title="App\DataFixtures\AbstractBaseFixtures::getReferenceNameListByClassName">getReferenceNameListByClassName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/CategoryFixtures.php.html#27"><abbr title="App\DataFixtures\CategoryFixtures::loadData">loadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/TaskFixtures.php.html#30"><abbr title="App\DataFixtures\TaskFixtures::loadData">loadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/TaskFixtures.php.html#68"><abbr title="App\DataFixtures\TaskFixtures::getDependencies">getDependencies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/UserFixtures.php.html#27"><abbr title="App\DataFixtures\UserFixtures::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/UserFixtures.php.html#38"><abbr title="App\DataFixtures\UserFixtures::loadData">loadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#74"><abbr title="App\Entity\Category::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#84"><abbr title="App\Entity\Category::getTitle">getTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#94"><abbr title="App\Entity\Category::setTitle">setTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#104"><abbr title="App\Entity\Category::getCreatedAt">getCreatedAt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#114"><abbr title="App\Entity\Category::setCreatedAt">setCreatedAt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#124"><abbr title="App\Entity\Category::getUpdatedAt">getUpdatedAt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#134"><abbr title="App\Entity\Category::setUpdatedAt">setUpdatedAt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#139"><abbr title="App\Entity\Category::getSlug">getSlug</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#144"><abbr title="App\Entity\Category::setSlug">setSlug</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enum/UserRole.php.html#21"><abbr title="App\Entity\Enum\UserRole::label">label</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#66"><abbr title="App\Entity\Task::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#76"><abbr title="App\Entity\Task::getTitle">getTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#86"><abbr title="App\Entity\Task::setTitle">setTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#96"><abbr title="App\Entity\Task::getCreatedAt">getCreatedAt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#106"><abbr title="App\Entity\Task::setCreatedAt">setCreatedAt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#116"><abbr title="App\Entity\Task::getUpdatedAt">getUpdatedAt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#126"><abbr title="App\Entity\Task::setUpdatedAt">setUpdatedAt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#131"><abbr title="App\Entity\Task::getCategory">getCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#136"><abbr title="App\Entity\Task::setCategory">setCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#143"><abbr title="App\Entity\Task::getAuthor">getAuthor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Task.php.html#148"><abbr title="App\Entity\Task::setAuthor">setAuthor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#64"><abbr title="App\Entity\User::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#74"><abbr title="App\Entity\User::getEmail">getEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#84"><abbr title="App\Entity\User::setEmail">setEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#96"><abbr title="App\Entity\User::getUserIdentifier">getUserIdentifier</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#108"><abbr title="App\Entity\User::getRoles">getRoles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#122"><abbr title="App\Entity\User::setRoles">setRoles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#134"><abbr title="App\Entity\User::getPassword">getPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#144"><abbr title="App\Entity\User::setPassword">setPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#154"><abbr title="App\Entity\User::eraseCredentials">eraseCredentials</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/CategoryType.php.html#30"><abbr title="App\Form\Type\CategoryType::buildForm">buildForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/CategoryType.php.html#47"><abbr title="App\Form\Type\CategoryType::configureOptions">configureOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/CategoryType.php.html#60"><abbr title="App\Form\Type\CategoryType::getBlockPrefix">getBlockPrefix</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/TaskType.php.html#33"><abbr title="App\Form\Type\TaskType::buildForm">buildForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/TaskType.php.html#62"><abbr title="App\Form\Type\TaskType::configureOptions">configureOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/TaskType.php.html#77"><abbr title="App\Form\Type\TaskType::getBlockPrefix">getBlockPrefix</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CategoryRepository.php.html#26"><abbr title="App\Repository\CategoryRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CategoryRepository.php.html#36"><abbr title="App\Repository\CategoryRepository::queryAll">queryAll</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CategoryRepository.php.html#46"><abbr title="App\Repository\CategoryRepository::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CategoryRepository.php.html#57"><abbr title="App\Repository\CategoryRepository::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RecordRepository.php.html#59"><abbr title="App\Repository\RecordRepository::findAll">findAll</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RecordRepository.php.html#71"><abbr title="App\Repository\RecordRepository::findOneById">findOneById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TaskRepository.php.html#27"><abbr title="App\Repository\TaskRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TaskRepository.php.html#37"><abbr title="App\Repository\TaskRepository::queryAll">queryAll</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TaskRepository.php.html#54"><abbr title="App\Repository\TaskRepository::countByCategory">countByCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TaskRepository.php.html#70"><abbr title="App\Repository\TaskRepository::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TaskRepository.php.html#81"><abbr title="App\Repository\TaskRepository::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/UserRepository.php.html#17"><abbr title="App\Repository\UserRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/UserRepository.php.html#25"><abbr title="App\Repository\UserRepository::upgradePassword">upgradePassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/Voter/TaskVoter.php.html#49"><abbr title="App\Security\Voter\TaskVoter::supports">supports</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/Voter/TaskVoter.php.html#66"><abbr title="App\Security\Voter\TaskVoter::voteOnAttribute">voteOnAttribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/Voter/TaskVoter.php.html#92"><abbr title="App\Security\Voter\TaskVoter::canDelete">canDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/Voter/TaskVoter.php.html#105"><abbr title="App\Security\Voter\TaskVoter::canEdit">canEdit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/Voter/TaskVoter.php.html#118"><abbr title="App\Security\Voter\TaskVoter::canView">canView</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/CategoryService.php.html#39"><abbr title="App\Service\CategoryService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/CategoryService.php.html#50"><abbr title="App\Service\CategoryService::getPaginatedList">getPaginatedList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/CategoryService.php.html#69"><abbr title="App\Service\CategoryService::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/CategoryService.php.html#82"><abbr title="App\Service\CategoryService::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/CategoryService.php.html#94"><abbr title="App\Service\CategoryService::canBeDeleted">canBeDeleted</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/TaskService.php.html#36"><abbr title="App\Service\TaskService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/TaskService.php.html#47"><abbr title="App\Service\TaskService::getPaginatedList">getPaginatedList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/TaskService.php.html#66"><abbr title="App\Service\TaskService::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/TaskService.php.html#76"><abbr title="App\Service\TaskService::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+         <th class="text-right">Complexity</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Security/Voter/TaskVoter.php.html#66"><abbr title="App\Security\Voter\TaskVoter::voteOnAttribute">voteOnAttribute</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">7</td><td class="text-right">56</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#164"><abbr title="App\Controller\CategoryController::delete">delete</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DataFixtures/AbstractBaseFixtures.php.html#128"><abbr title="App\DataFixtures\AbstractBaseFixtures::getReferenceNameListByClassName">getReferenceNameListByClassName</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#82"><abbr title="App\Controller\CategoryController::create">create</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#118"><abbr title="App\Controller\CategoryController::edit">edit</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/TaskController.php.html#86"><abbr title="App\Controller\TaskController::create">create</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/TaskController.php.html#125"><abbr title="App\Controller\TaskController::edit">edit</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/TaskController.php.html#172"><abbr title="App\Controller\TaskController::delete">delete</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DataFixtures/AbstractBaseFixtures.php.html#64"><abbr title="App\DataFixtures\AbstractBaseFixtures::createMany">createMany</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DataFixtures/CategoryFixtures.php.html#27"><abbr title="App\DataFixtures\CategoryFixtures::loadData">loadData</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DataFixtures/TaskFixtures.php.html#30"><abbr title="App\DataFixtures\TaskFixtures::loadData">loadData</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DataFixtures/UserFixtures.php.html#38"><abbr title="App\DataFixtures\UserFixtures::loadData">loadData</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Entity/Enum/UserRole.php.html#21"><abbr title="App\Entity\Enum\UserRole::label">label</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repository/RecordRepository.php.html#71"><abbr title="App\Repository\RecordRepository::findOneById">findOneById</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/RecordController.php.html#49"><abbr title="App\Controller\RecordController::view">view</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/SecurityController.php.html#27"><abbr title="App\Controller\SecurityController::login">login</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DataFixtures/AbstractBaseFixtures.php.html#108"><abbr title="App\DataFixtures\AbstractBaseFixtures::getRandomReferenceList">getRandomReferenceList</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/UserRepository.php.html#25"><abbr title="App\Repository\UserRepository::upgradePassword">upgradePassword</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Security/Voter/TaskVoter.php.html#49"><abbr title="App\Security\Voter\TaskVoter::supports">supports</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Service/CategoryService.php.html#69"><abbr title="App\Service\CategoryService::save">save</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Service/CategoryService.php.html#94"><abbr title="App\Service\CategoryService::canBeDeleted">canBeDeleted</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 13.0.1</a> using <a href="https://www.php.net/" target="_top">PHP 8.5.5</a> and <a href="https://phpunit.de/">PHPUnit 13.0.5</a> at Wed Apr 29 7:15:17 UTC 2026.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/billboard.pkgd.min.js?v=13.0.1" type="text/javascript"></script>
+  <script type="application/json" id="complexity_class">[[0,13,"Controller\/CategoryController.php.html#23","App\\Controller\\CategoryController","182"],[0,1,"Controller\/HelloController.php.html#16","App\\Controller\\HelloController","2"],[0,3,"Controller\/RecordController.php.html#17","App\\Controller\\RecordController","12"],[0,3,"Controller\/SecurityController.php.html#18","App\\Controller\\SecurityController","12"],[0,12,"Controller\/TaskController.php.html#26","App\\Controller\\TaskController","156"],[0,11,"DataFixtures\/AbstractBaseFixtures.php.html#19","App\\DataFixtures\\AbstractBaseFixtures","132"],[0,3,"DataFixtures\/CategoryFixtures.php.html#18","App\\DataFixtures\\CategoryFixtures","12"],[0,4,"DataFixtures\/TaskFixtures.php.html#21","App\\DataFixtures\\TaskFixtures","20"],[0,4,"DataFixtures\/UserFixtures.php.html#20","App\\DataFixtures\\UserFixtures","20"],[0,9,"Entity\/Category.php.html#21","App\\Entity\\Category","90"],[0,3,"Entity\/Enum\/UserRole.php.html#11","App\\Entity\\Enum\\UserRole","12"],[0,11,"Entity\/Task.php.html#16","App\\Entity\\Task","132"],[0,9,"Entity\/User.php.html#19","App\\Entity\\User","90"],[0,3,"Form\/Type\/CategoryType.php.html#17","App\\Form\\Type\\CategoryType","12"],[0,3,"Form\/Type\/TaskType.php.html#20","App\\Form\\Type\\TaskType","12"],[0,4,"Repository\/CategoryRepository.php.html#19","App\\Repository\\CategoryRepository","20"],[0,4,"Repository\/RecordRepository.php.html#12","App\\Repository\\RecordRepository","20"],[0,5,"Repository\/TaskRepository.php.html#20","App\\Repository\\TaskRepository","30"],[0,3,"Repository\/UserRepository.php.html#15","App\\Repository\\UserRepository","12"],[0,12,"Security\/Voter\/TaskVoter.php.html#18","App\\Security\\Voter\\TaskVoter","156"],[0,7,"Service\/CategoryService.php.html#20","App\\Service\\CategoryService","56"],[0,4,"Service\/TaskService.php.html#17","App\\Service\\TaskService","20"],[100,0,"Kernel.php.html#8","App\\Kernel","0"],[100,1,"Util\/Calculator.php.html#11","App\\Util\\Calculator","1"]]</script>
+  <script type="application/json" id="complexity_method">[[0,1,"Controller\/CategoryController.php.html#32","App\\Controller\\CategoryController::__construct","2"],[0,1,"Controller\/CategoryController.php.html#43","App\\Controller\\CategoryController::index","2"],[0,1,"Controller\/CategoryController.php.html#61","App\\Controller\\CategoryController::view","2"],[0,3,"Controller\/CategoryController.php.html#82","App\\Controller\\CategoryController::create","12"],[0,3,"Controller\/CategoryController.php.html#118","App\\Controller\\CategoryController::edit","12"],[0,4,"Controller\/CategoryController.php.html#164","App\\Controller\\CategoryController::delete","20"],[0,1,"Controller\/HelloController.php.html#26","App\\Controller\\HelloController::index","2"],[0,1,"Controller\/RecordController.php.html#27","App\\Controller\\RecordController::index","2"],[0,2,"Controller\/RecordController.php.html#49","App\\Controller\\RecordController::view","6"],[0,2,"Controller\/SecurityController.php.html#27","App\\Controller\\SecurityController::login","6"],[0,1,"Controller\/SecurityController.php.html#49","App\\Controller\\SecurityController::logout","2"],[0,1,"Controller\/TaskController.php.html#35","App\\Controller\\TaskController::__construct","2"],[0,1,"Controller\/TaskController.php.html#46","App\\Controller\\TaskController::index","2"],[0,1,"Controller\/TaskController.php.html#64","App\\Controller\\TaskController::view","2"],[0,3,"Controller\/TaskController.php.html#86","App\\Controller\\TaskController::create","12"],[0,3,"Controller\/TaskController.php.html#125","App\\Controller\\TaskController::edit","12"],[0,3,"Controller\/TaskController.php.html#172","App\\Controller\\TaskController::delete","12"],[0,1,"DataFixtures\/AbstractBaseFixtures.php.html#36","App\\DataFixtures\\AbstractBaseFixtures::load","2"],[0,0,"DataFixtures\/AbstractBaseFixtures.php.html#46","App\\DataFixtures\\AbstractBaseFixtures::loadData","0"],[0,3,"DataFixtures\/AbstractBaseFixtures.php.html#64","App\\DataFixtures\\AbstractBaseFixtures::createMany","12"],[0,1,"DataFixtures\/AbstractBaseFixtures.php.html#91","App\\DataFixtures\\AbstractBaseFixtures::getRandomReference","2"],[0,2,"DataFixtures\/AbstractBaseFixtures.php.html#108","App\\DataFixtures\\AbstractBaseFixtures::getRandomReferenceList","6"],[0,4,"DataFixtures\/AbstractBaseFixtures.php.html#128","App\\DataFixtures\\AbstractBaseFixtures::getReferenceNameListByClassName","20"],[0,3,"DataFixtures\/CategoryFixtures.php.html#27","App\\DataFixtures\\CategoryFixtures::loadData","12"],[0,3,"DataFixtures\/TaskFixtures.php.html#30","App\\DataFixtures\\TaskFixtures::loadData","12"],[0,1,"DataFixtures\/TaskFixtures.php.html#68","App\\DataFixtures\\TaskFixtures::getDependencies","2"],[0,1,"DataFixtures\/UserFixtures.php.html#27","App\\DataFixtures\\UserFixtures::__construct","2"],[0,3,"DataFixtures\/UserFixtures.php.html#38","App\\DataFixtures\\UserFixtures::loadData","12"],[0,1,"Entity\/Category.php.html#74","App\\Entity\\Category::getId","2"],[0,1,"Entity\/Category.php.html#84","App\\Entity\\Category::getTitle","2"],[0,1,"Entity\/Category.php.html#94","App\\Entity\\Category::setTitle","2"],[0,1,"Entity\/Category.php.html#104","App\\Entity\\Category::getCreatedAt","2"],[0,1,"Entity\/Category.php.html#114","App\\Entity\\Category::setCreatedAt","2"],[0,1,"Entity\/Category.php.html#124","App\\Entity\\Category::getUpdatedAt","2"],[0,1,"Entity\/Category.php.html#134","App\\Entity\\Category::setUpdatedAt","2"],[0,1,"Entity\/Category.php.html#139","App\\Entity\\Category::getSlug","2"],[0,1,"Entity\/Category.php.html#144","App\\Entity\\Category::setSlug","2"],[0,3,"Entity\/Enum\/UserRole.php.html#21","App\\Entity\\Enum\\UserRole::label","12"],[0,1,"Entity\/Task.php.html#66","App\\Entity\\Task::getId","2"],[0,1,"Entity\/Task.php.html#76","App\\Entity\\Task::getTitle","2"],[0,1,"Entity\/Task.php.html#86","App\\Entity\\Task::setTitle","2"],[0,1,"Entity\/Task.php.html#96","App\\Entity\\Task::getCreatedAt","2"],[0,1,"Entity\/Task.php.html#106","App\\Entity\\Task::setCreatedAt","2"],[0,1,"Entity\/Task.php.html#116","App\\Entity\\Task::getUpdatedAt","2"],[0,1,"Entity\/Task.php.html#126","App\\Entity\\Task::setUpdatedAt","2"],[0,1,"Entity\/Task.php.html#131","App\\Entity\\Task::getCategory","2"],[0,1,"Entity\/Task.php.html#136","App\\Entity\\Task::setCategory","2"],[0,1,"Entity\/Task.php.html#143","App\\Entity\\Task::getAuthor","2"],[0,1,"Entity\/Task.php.html#148","App\\Entity\\Task::setAuthor","2"],[0,1,"Entity\/User.php.html#64","App\\Entity\\User::getId","2"],[0,1,"Entity\/User.php.html#74","App\\Entity\\User::getEmail","2"],[0,1,"Entity\/User.php.html#84","App\\Entity\\User::setEmail","2"],[0,1,"Entity\/User.php.html#96","App\\Entity\\User::getUserIdentifier","2"],[0,1,"Entity\/User.php.html#108","App\\Entity\\User::getRoles","2"],[0,1,"Entity\/User.php.html#122","App\\Entity\\User::setRoles","2"],[0,1,"Entity\/User.php.html#134","App\\Entity\\User::getPassword","2"],[0,1,"Entity\/User.php.html#144","App\\Entity\\User::setPassword","2"],[0,1,"Entity\/User.php.html#154","App\\Entity\\User::eraseCredentials","2"],[0,1,"Form\/Type\/CategoryType.php.html#30","App\\Form\\Type\\CategoryType::buildForm","2"],[0,1,"Form\/Type\/CategoryType.php.html#47","App\\Form\\Type\\CategoryType::configureOptions","2"],[0,1,"Form\/Type\/CategoryType.php.html#60","App\\Form\\Type\\CategoryType::getBlockPrefix","2"],[0,1,"Form\/Type\/TaskType.php.html#33","App\\Form\\Type\\TaskType::buildForm","2"],[0,1,"Form\/Type\/TaskType.php.html#62","App\\Form\\Type\\TaskType::configureOptions","2"],[0,1,"Form\/Type\/TaskType.php.html#77","App\\Form\\Type\\TaskType::getBlockPrefix","2"],[0,1,"Repository\/CategoryRepository.php.html#26","App\\Repository\\CategoryRepository::__construct","2"],[0,1,"Repository\/CategoryRepository.php.html#36","App\\Repository\\CategoryRepository::queryAll","2"],[0,1,"Repository\/CategoryRepository.php.html#46","App\\Repository\\CategoryRepository::save","2"],[0,1,"Repository\/CategoryRepository.php.html#57","App\\Repository\\CategoryRepository::delete","2"],[0,1,"Repository\/RecordRepository.php.html#59","App\\Repository\\RecordRepository::findAll","2"],[0,3,"Repository\/RecordRepository.php.html#71","App\\Repository\\RecordRepository::findOneById","12"],[0,1,"Repository\/TaskRepository.php.html#27","App\\Repository\\TaskRepository::__construct","2"],[0,1,"Repository\/TaskRepository.php.html#37","App\\Repository\\TaskRepository::queryAll","2"],[0,1,"Repository\/TaskRepository.php.html#54","App\\Repository\\TaskRepository::countByCategory","2"],[0,1,"Repository\/TaskRepository.php.html#70","App\\Repository\\TaskRepository::save","2"],[0,1,"Repository\/TaskRepository.php.html#81","App\\Repository\\TaskRepository::delete","2"],[0,1,"Repository\/UserRepository.php.html#17","App\\Repository\\UserRepository::__construct","2"],[0,2,"Repository\/UserRepository.php.html#25","App\\Repository\\UserRepository::upgradePassword","6"],[0,2,"Security\/Voter\/TaskVoter.php.html#49","App\\Security\\Voter\\TaskVoter::supports","6"],[0,7,"Security\/Voter\/TaskVoter.php.html#66","App\\Security\\Voter\\TaskVoter::voteOnAttribute","56"],[0,1,"Security\/Voter\/TaskVoter.php.html#92","App\\Security\\Voter\\TaskVoter::canDelete","2"],[0,1,"Security\/Voter\/TaskVoter.php.html#105","App\\Security\\Voter\\TaskVoter::canEdit","2"],[0,1,"Security\/Voter\/TaskVoter.php.html#118","App\\Security\\Voter\\TaskVoter::canView","2"],[0,1,"Service\/CategoryService.php.html#39","App\\Service\\CategoryService::__construct","2"],[0,1,"Service\/CategoryService.php.html#50","App\\Service\\CategoryService::getPaginatedList","2"],[0,2,"Service\/CategoryService.php.html#69","App\\Service\\CategoryService::save","6"],[0,1,"Service\/CategoryService.php.html#82","App\\Service\\CategoryService::delete","2"],[0,2,"Service\/CategoryService.php.html#94","App\\Service\\CategoryService::canBeDeleted","6"],[0,1,"Service\/TaskService.php.html#36","App\\Service\\TaskService::__construct","2"],[0,1,"Service\/TaskService.php.html#47","App\\Service\\TaskService::getPaginatedList","2"],[0,1,"Service\/TaskService.php.html#66","App\\Service\\TaskService::save","2"],[0,1,"Service\/TaskService.php.html#76","App\\Service\\TaskService::delete","2"],[100,1,"Util\/Calculator.php.html#21","App\\Util\\Calculator::add","1"]]</script>
+  <script type="text/javascript" defer>
+  const barLabels = [
+    '0%',
+    '0-10%',
+    '10-20%',
+    '20-30%',
+    '30-40%',
+    '40-50%',
+    '50-60%',
+    '60-70%',
+    '70-80%',
+    '80-90%',
+    '90-100%',
+    '100%'
+  ];
+  const barConfig = (name, fullName, values) => ({
+    axis: {
+      x: {
+        type: "category",
+        categories: barLabels,
+      },
+      y: {
+        label: {
+          text: `#${name}`,
+          position: 'outer-top',
+        },
+      },
+    },
+    bindto: `#${name}CoverageDistribution`,
+    data: {
+      columns: [
+        [fullName].concat(values),
+      ],
+      colors: {
+        [fullName]: "rgba(69, 114, 167, 0.75)",
+      },
+      type: "bar",
+    },
+    bar: {
+      width: {
+        ratio: 0.9,
+      },
+    },
+    grid: {
+      focus: {
+        show: false,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">Coverage ${barLabels[data[0].x]}</th></tr>
+            <tr><td class="value">${data[0].value} ${name}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
+  });
+  bb.generate(
+    barConfig('classes', "Class Coverage", [22,0,0,0,0,0,0,0,0,0,0,2])
+  );
+  bb.generate(
+    barConfig('methods', "Method Coverage", [91,0,0,0,0,0,0,0,0,0,0,1])
+  );
+
+  const scatterConfig = (name, complexityData) => ({
+    axis: {
+      x: {
+        label: {
+          text: 'Code Coverage (in percent)',
+          position: 'outer-right',
+        },
+        tick: {
+          values: [0, 20, 40, 60, 80, 100],
+        },
+      },
+      y: {
+        label: {
+          text: 'Cyclomatic Complexity',
+          position: 'outer-top',
+        },
+        min: 0,
+        padding: {
+          bottom: 0,
+          top: 5,
+        },
+      },
+    },
+    bindto: `#${name}Complexity`,
+    data: {
+      columns: [
+        ["complexity_x"].concat(complexityData.map(d => d[0])),
+        ["complexity"].concat(complexityData.map(d => d[1])),
+      ],
+      onclick: function(data, element) {
+        window.location = complexityData[data.index][2];
+      },
+      type: "scatter",
+      xs: {
+        "complexity": "complexity_x",
+      },
+    },
+    grid: {
+      focus: {
+        show: true,
+        y: true,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        const coverage = Math.round(data[0].x);
+        const complexity = data[0].value;
+        const targetName = complexityData[data[0].index][3];
+        const crap = complexityData[data[0].index][4];
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">${targetName}</th></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Coverage</td><td class="name">${coverage}%</td></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Complexity</td><td class="value">${complexity}</td></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Crap</td><td class="value">${crap}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
+  });
+  const classComplexityData = JSON.parse(document.getElementById('complexity_class').textContent);
+  bb.generate(
+    scatterConfig("class", classComplexityData)
+  );
+  const methodComplexityData = JSON.parse(document.getElementById('complexity_method').textContent);
+  bb.generate(
+    scatterConfig("method", methodComplexityData),
+  );
+  </script>
+ </body>
+</html>
